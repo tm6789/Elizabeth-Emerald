@@ -947,6 +947,7 @@ const u8 gText_DepositPokemon[] = _("DEPOSIT POKéMON");
 const u8 gText_MovePokemon[] = _("MOVE POKéMON");
 const u8 gText_MoveItems[] = _("MOVE ITEMS");
 const u8 gText_SeeYa[] = _("SEE YA!");
+const u8 gText_MenuPC[] = _("PC");
 const u8 gText_WithdrawMonDescription[] = _("Move POKéMON stored in BOXES to\nyour party.");
 const u8 gText_DepositMonDescription[] = _("Store POKéMON in your party in BOXES.");
 const u8 gText_MoveMonDescription[] = _("Organize the POKéMON in BOXES and\nin your party.");
