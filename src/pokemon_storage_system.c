@@ -2009,6 +2009,27 @@ static void CB2_PokeStorage(void)
     BuildOamBuffer();
 }
 
+void EnterPokeStorage(u8 boxOption)
+{
+    ResetTasks();
+    sCurrentBoxOption = boxOption;
+    sStorage = Alloc(sizeof(*sStorage));
+    if (sStorage == NULL)
+    {
+        SetMainCallback2(CB2_ExitPokeStorage);
+    }
+    else
+    {
+        sStorage->boxOption = boxOption;
+        sStorage->isReopening = FALSE;
+        sMovingItemId = ITEM_NONE;
+        sStorage->state = 0;
+        sStorage->taskId = CreateTask(Task_InitPokeStorage, 3);
+        sLastUsedBox = StorageGetCurrentBox();
+        SetMainCallback2(CB2_PokeStorage);
+    }
+}
+
 static void CB2_ReturnToPokeStorage(void)
 {
     ResetTasks();
