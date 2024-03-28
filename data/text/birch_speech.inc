@@ -1,6 +1,6 @@
 gText_Birch_Welcome::
-	.string "Hi! Sorry to keep you waiting!\p"
-	.string "Welcome to the world of POKéMON!\p"
+	.string "Hello Elizabeth! It's good to see you!\p"
+	.string "Welcome to Elizabeth Emerald v2.0!\p"
 	.string "My name is BIRCH.\p"
 	.string "But everyone calls me the POKéMON\n"
 	.string "PROFESSOR.\p"
