@@ -1,5 +1,5 @@
 gText_WouldYouLikeToRestYourPkmn::
-	.string "Hello, and welcome to\n"
+	.string "Hello {PLAYER}, and welcome to\n"
 	.string "the POKéMON CENTER.\p"
 	.string "We restore your tired POKéMON\n"
 	.string "to full health.\p"
@@ -18,7 +18,7 @@ gText_WeHopeToSeeYouAgain::
 	.string "We hope to see you again!$"
 
 gText_WelcomeCutShort::
-	.string "Hello, and welcome to\n"
+	.string "Hello {PLAYER}, and welcome to\n"
 	.string "the POKéMON CENTER.\p"
 	.string "We restore your tired POKéMON\n"
 	.string "to full health.\p"

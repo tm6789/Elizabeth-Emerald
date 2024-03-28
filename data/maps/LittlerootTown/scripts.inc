@@ -915,11 +915,11 @@ LittlerootTown_Text_OurNewHomeLetsGoInside:
 	.string "in the moving truck.\p"
 	.string "Well, this is LITTLEROOT TOWN.\p"
 	.string "How do you like it?\n"
-	.string "This is our new home!\p"
-	.string "It has a quaint feel, but it seems to be\n"
-	.string "an easy place to live, don't you think?\p"
-	.string "And, you get your own room, {PLAYER}!\n"
-	.string "Let's go inside.$"
+	.string "I didn't believe them when they said\p"
+	.string "only one other family lives here, but we\n"
+	.string "can't change our mind now, huh?\p"
+	.string "Houses are just too much money these\n"
+	.string "days... Anyways, let's go inside!$"
 
 LittlerootTown_Text_WaitPlayer:
 	.string "MOM: Wait, {PLAYER}!$"
@@ -944,8 +944,8 @@ LittlerootTown_Text_ExplainRunningShoes:
 	.string "instructions.\p"
 	.string "“Press the B Button while wearing these\n"
 	.string "RUNNING SHOES to run extra-fast!\p"
-	.string "“Slip on these RUNNING SHOES and race\n"
-	.string "in the great outdoors!”$"
+	.string "“Slip on these RUNNING SHOES and go!”\n"
+	.string "Um, what is a “B Button”?$"
 
 LittlerootTown_Text_ComeHomeIfAnythingHappens:
 	.string "… … … … … … … …\n"
@@ -954,8 +954,8 @@ LittlerootTown_Text_ComeHomeIfAnythingHappens:
 	.string "POKéMON now…\l"
 	.string "Your father will be overjoyed.\p"
 	.string "…But please be careful.\n"
-	.string "If anything happens, you can come home.\p"
-	.string "Go on, go get them, honey!$"
+	.string "If anything happens to you, I can't\p"
+	.string "just go to the {PLAYER} store!$"
 
 LittlerootTown_Text_CanUsePCToStoreItems:
 	.string "If you use a PC, you can store items\n"
@@ -989,7 +989,7 @@ LittlerootTown_Text_CanYouGoSeeWhatsHappening:
 
 LittlerootTown_Text_YouSavedBirch:
 	.string "You saved PROF. BIRCH!\n"
-	.string "I'm so glad!$"
+	.string "You're a hero!$"
 
 LittlerootTown_Text_GoodLuckCatchingPokemon:
 	.string "Are you going to catch POKéMON?\n"
@@ -997,7 +997,7 @@ LittlerootTown_Text_GoodLuckCatchingPokemon:
 
 LittlerootTown_Text_TownSign:
 	.string "LITTLEROOT TOWN\n"
-	.string "“A town that can't be shaded any hue.”$"
+	.string "Total Population: 7$"
 
 LittlerootTown_Text_ProfBirchsLab:
 	.string "PROF. BIRCH'S POKéMON LAB$"
