@@ -40,7 +40,7 @@ Route102_Text_AllenIntro:
 
 Route102_Text_AllenDefeated:
 	.string "I called you because I thought\n"
-	.string "I could beat you…$"
+	.string "you looked really weak…$"
 
 Route102_Text_AllenPostBattle:
 	.string "I haven't won once yet…\n"
@@ -51,7 +51,7 @@ Route102_Text_RickIntro:
 	.string "I'll take you on with my BUG POKéMON!$"
 
 Route102_Text_RickDefeated:
-	.string "Ow! Down and out!$"
+	.string "Ow! Who are you?$"
 
 Route102_Text_RickPostBattle:
 	.string "If you lock eyes with a TRAINER,\n"
