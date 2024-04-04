@@ -149,7 +149,7 @@ static const LoopedTask sMenuHandlerLoopTaskFuncs[] =
     [POKENAV_MENU_FUNC_NO_RIBBON_WINNERS]     = LoopedTask_SelectRibbonsNoWinners,
     [POKENAV_MENU_FUNC_RESHOW_DESCRIPTION]    = LoopedTask_ReShowDescription,
     [POKENAV_MENU_FUNC_OPEN_FEATURE]          = LoopedTask_OpenPokenavFeature,
-    [POKENAV_MENU_FUNC_CANNOT_ACCESS_PC]      = LoopedTask_CannotAccesPC
+    [POKENAV_MENU_FUNC_CANNOT_ACCESS_PC]      = LoopedTask_CannotAccessPC
 };
 
 static const struct CompressedSpriteSheet sPokenavOptionsSpriteSheets[] =
