@@ -483,8 +483,8 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         FOOTPRINT(Dewott)
         .levelUpLearnset = sDewottLevelUpLearnset,
         .teachableLearnset = sDewottTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_SAMUROTT},
-                                {EVO_NONE, 0, SPECIES_SAMUROTT_HISUIAN}),
+        .evolutions = EVOLUTION({EVO_LEVEL_DAY, 36, SPECIES_SAMUROTT},
+                                {EVO_LEVEL_NIGHT, 36, SPECIES_SAMUROTT_HISUIAN}),
     },
 
     [SPECIES_SAMUROTT] =
