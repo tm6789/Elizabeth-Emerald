@@ -126,6 +126,7 @@ enum {
     MENU_GIVE_2,
     MENU_SWITCH,
     MENU_BAG,
+    MENU_MOVES,
     MENU_INFO,
     MENU_SCENERY_1,
     MENU_SCENERY_2,
