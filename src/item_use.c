@@ -45,6 +45,9 @@
 #include "constants/items.h"
 #include "constants/songs.h"
 #include "constants/map_types.h"
+#include "wallclock.h"
+#include "clock.h"
+#include "rtc.h"
 
 static void SetUpItemUseCallback(u8);
 static void FieldCB_UseItemOnField(void);
@@ -78,6 +81,7 @@ static void Task_CloseCantUseKeyItemMessage(u8);
 static void SetDistanceOfClosestHiddenItem(u8, s16, s16);
 static void CB2_OpenPokeblockFromBag(void);
 static void ItemUseOnFieldCB_Honey(u8 taskId);
+static void ItemUseCB_PocketWatch (u8 taskId);
 static bool32 IsValidLocationForVsSeeker(void);
 
 // EWRAM variables
@@ -1433,6 +1437,23 @@ void ItemUseOutOfBattle_Honey(u8 taskId)
     gFieldCallback = FieldCB_UseItemOnField;
     gBagMenu->newScreenCallback = CB2_ReturnToField;
     Task_FadeAndCloseBagMenu(taskId);
+}
+
+extern u8 PocketWatchScript[];
+
+void ItemUseOutOfBattle_PocketWatch(u8 taskId)
+{
+    sItemUseOnFieldCB = ItemUseCB_PocketWatch;
+    gFieldCallback = FieldCB_UseItemOnField;
+    gBagMenu->newScreenCallback = CB2_ReturnToField;
+    Task_FadeAndCloseBagMenu(taskId);
+}
+
+void ItemUseCB_PocketWatch (u8 taskId)
+{
+    LockPlayerFieldControls();
+    ScriptContext_SetupScript(PocketWatchScript);
+    DestroyTask(taskId);
 }
 
 void ItemUseOutOfBattle_CannotUse(u8 taskId)

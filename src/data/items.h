@@ -12616,4 +12616,18 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
     },
+
+    [ITEM_POCKET_WATCH] =
+    {
+        .name = _("Pocket Watch"),
+        .price = 0,
+        .description = COMPOUND_STRING(
+            "A pocket watch\n"
+            "with 'For my Doll'\n"
+            "engraved on it."),
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_PocketWatch,
+    },
 };

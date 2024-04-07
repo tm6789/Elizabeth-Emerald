@@ -5,3 +5,7 @@ Text_ThisIsATestSignpostMsg::
 EventScript_TestSignpostMsg::
 	msgbox Text_ThisIsATestSignpostMsg, MSGBOX_SIGN
 	end
+
+PocketWatchScript::
+	goto LittlerootTown_MaysHouse_2F_EventScript_WallClock
+	end
