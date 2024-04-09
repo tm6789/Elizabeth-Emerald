@@ -32,6 +32,7 @@
 #include "party_menu.h"
 #include "pokeblock.h"
 #include "pokemon.h"
+#include "region_map.h"
 #include "script.h"
 #include "sound.h"
 #include "strings.h"
@@ -82,6 +83,7 @@ static void SetDistanceOfClosestHiddenItem(u8, s16, s16);
 static void CB2_OpenPokeblockFromBag(void);
 static void ItemUseOnFieldCB_Honey(u8 taskId);
 static void ItemUseCB_PocketWatch (u8 taskId);
+static void ItemUseCB_TaxiMap (u8 taskId);
 static bool32 IsValidLocationForVsSeeker(void);
 
 // EWRAM variables
@@ -1460,7 +1462,7 @@ extern u8 TaxiMapScript[];
 
 void ItemUseOutOfBattle_TaxiMap(u8 taskId)
 {
-    sItemUseOnFieldCB = ItemUseCB_Taxi;
+    sItemUseOnFieldCB = ItemUseCB_TaxiMap;
     gFieldCallback = FieldCB_UseItemOnField;
     gBagMenu->newScreenCallback = CB2_ReturnToField;
     Task_FadeAndCloseBagMenu(taskId);
