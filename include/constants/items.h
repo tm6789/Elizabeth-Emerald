@@ -999,11 +999,12 @@
 #define ITEM_POKESHI_DOLL 827
 
 #define ITEM_POCKET_WATCH 828
+#define ITEM_TAXI_MAP 829
 
 // HOPO BERRY
 // LEGEND PLATE
 
-#define ITEMS_COUNT 829
+#define ITEMS_COUNT 830
 #define ITEM_FIELD_ARROW ITEMS_COUNT
 
 // A special item id associated with "Cancel"/"Exit" etc. in a list of items or decorations

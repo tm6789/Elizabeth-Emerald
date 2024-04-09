@@ -1456,6 +1456,23 @@ void ItemUseCB_PocketWatch (u8 taskId)
     DestroyTask(taskId);
 }
 
+extern u8 TaxiMapScript[];
+
+void ItemUseOutOfBattle_TaxiMap(u8 taskId)
+{
+    sItemUseOnFieldCB = ItemUseCB_Taxi;
+    gFieldCallback = FieldCB_UseItemOnField;
+    gBagMenu->newScreenCallback = CB2_ReturnToField;
+    Task_FadeAndCloseBagMenu(taskId);
+}
+
+void ItemUseCB_TaxiMap (u8 taskId)
+{
+    LockPlayerFieldControls();
+    ScriptContext_SetupScript(TaxiMapScript);
+    DestroyTask(taskId);
+}
+
 void ItemUseOutOfBattle_CannotUse(u8 taskId)
 {
     DisplayDadsAdviceCannotUseItemMessage(taskId, gTasks[taskId].tUsingRegisteredKeyItem);

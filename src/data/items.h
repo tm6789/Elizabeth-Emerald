@@ -12630,4 +12630,18 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_PocketWatch,
     },
+
+    [ITEM_TAXI_MAP] =
+    {
+        .name = _("Taxi Map"),
+        .price = 0,
+        .description = COMPOUND_STRING(
+            "A map that lists all\n"
+            "the different places\n"
+            "a taxi can take you."),
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_TaxiMap,
+    },
 };

@@ -874,6 +874,7 @@ const u32 *const gItemIconTable[ITEMS_COUNT + 1][2] =
     [ITEM_TWICE_SPICED_RADISH] = {gItemIcon_TwiceSpicedRadish, gItemIconPalette_TwiceSpicedRadish},
     [ITEM_POKESHI_DOLL] = {gItemIcon_PokeshiDoll, gItemIconPalette_PokeshiDoll},
     [ITEM_POCKET_WATCH] = {gItemIcon_BottleCap, gItemIconPalette_GoldBottleCap},
+    [ITEM_TAXI_MAP] = {gItemIcon_TriPass, gItemIconPalette_TriPass},
     // Return to field arrow
     [ITEMS_COUNT] = {gItemIcon_ReturnToFieldArrow, gItemIconPalette_ReturnToFieldArrow},
 };

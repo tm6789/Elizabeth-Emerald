@@ -9,3 +9,7 @@ EventScript_TestSignpostMsg::
 PocketWatchScript::
 	goto LittlerootTown_MaysHouse_2F_EventScript_WallClock
 	end
+
+TaxiMapScript::
+	goto LittlerootTown_MaysHouse_2F_EventScript_WallClock
+	end
