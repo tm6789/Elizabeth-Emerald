@@ -82,8 +82,9 @@ static void Task_CloseCantUseKeyItemMessage(u8);
 static void SetDistanceOfClosestHiddenItem(u8, s16, s16);
 static void CB2_OpenPokeblockFromBag(void);
 static void ItemUseOnFieldCB_Honey(u8 taskId);
-static void ItemUseCB_PocketWatch (u8 taskId);
-static void ItemUseCB_TaxiMap (u8 taskId);
+static void ItemUseCB_PocketWatch(u8 taskId);
+static void ItemUseCB_TaxiMap(u8 taskId);
+void CB2_OpenFlyMap(void);
 static bool32 IsValidLocationForVsSeeker(void);
 
 // EWRAM variables
@@ -1451,7 +1452,7 @@ void ItemUseOutOfBattle_PocketWatch(u8 taskId)
     Task_FadeAndCloseBagMenu(taskId);
 }
 
-void ItemUseCB_PocketWatch (u8 taskId)
+void ItemUseCB_PocketWatch(u8 taskId)
 {
     LockPlayerFieldControls();
     ScriptContext_SetupScript(PocketWatchScript);
@@ -1468,11 +1469,9 @@ void ItemUseOutOfBattle_TaxiMap(u8 taskId)
     Task_FadeAndCloseBagMenu(taskId);
 }
 
-void ItemUseCB_TaxiMap (u8 taskId)
+void ItemUseCB_TaxiMap(u8 taskId)
 {
-    LockPlayerFieldControls();
-    ScriptContext_SetupScript(TaxiMapScript);
-    DestroyTask(taskId);
+    SetMainCallback2(CB2_OpenFlyMap);
 }
 
 void ItemUseOutOfBattle_CannotUse(u8 taskId)

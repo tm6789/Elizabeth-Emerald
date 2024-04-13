@@ -12645,8 +12645,8 @@ const struct Item gItemsInfo[] =
         .price = 0,
         .description = COMPOUND_STRING(
             "A map that lists all\n"
-            "the different places\n"
-            "a taxi can take you."),
+            "the places a taxi\n"
+            "can take you."),
         .importance = 1,
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,
