@@ -83,6 +83,7 @@ static void SetDistanceOfClosestHiddenItem(u8, s16, s16);
 static void CB2_OpenPokeblockFromBag(void);
 static void ItemUseOnFieldCB_Honey(u8 taskId);
 static void ItemUseCB_PocketWatch(u8 taskId);
+bool8 Overworld_MapTypeAllowsTeleportAndFly(u8 mapType);
 static void ItemUseCB_TaxiMap(u8 taskId);
 void CB2_OpenFlyMap(void);
 static bool32 IsValidLocationForVsSeeker(void);
@@ -1463,10 +1464,17 @@ extern u8 TaxiMapScript[];
 
 void ItemUseOutOfBattle_TaxiMap(u8 taskId)
 {
-    sItemUseOnFieldCB = ItemUseCB_TaxiMap;
-    gFieldCallback = FieldCB_UseItemOnField;
-    gBagMenu->newScreenCallback = CB2_ReturnToField;
-    Task_FadeAndCloseBagMenu(taskId);
+   if (Overworld_MapTypeAllowsTeleportAndFly(gMapHeader.mapType) == TRUE)
+   {
+       sItemUseOnFieldCB = ItemUseCB_TaxiMap;
+       gFieldCallback = FieldCB_UseItemOnField;
+       gBagMenu->newScreenCallback = CB2_ReturnToField;
+       Task_FadeAndCloseBagMenu(taskId);
+   } 
+   else
+   {
+       ItemUseOutOfBattle_CannotUse(taskId);
+   }
 }
 
 void ItemUseCB_TaxiMap(u8 taskId)
