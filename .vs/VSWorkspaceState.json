@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\data",
+    "\\src"
   ],
-  "SelectedNode": "\\C:\\Users\\tcvma\\OneDrive\\Documents\\GitHub\\Elizabeth-Emerald",
+  "SelectedNode": "\\data\\field_effect_scripts.s",
   "PreviewInSolutionExplorer": false
 }

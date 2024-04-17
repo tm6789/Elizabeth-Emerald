@@ -41,3 +41,4 @@ prefabs.json
 src/data/map_group_count.h
 *.vsidx
 .vs/
+/.vs
