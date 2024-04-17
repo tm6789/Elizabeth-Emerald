@@ -116,6 +116,7 @@ enum {
     MENU_SHIFT,
     MENU_PLACE,
     MENU_SUMMARY,
+    MENU_MOVES,
     MENU_RELEASE,
     MENU_MARK,
     MENU_JUMP,
