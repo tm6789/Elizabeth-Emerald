@@ -1,9 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\data",
-    "\\src"
+    "\\include\\config"
   ],
-  "SelectedNode": "\\data\\field_effect_scripts.s",
+  "SelectedNode": "\\include",
   "PreviewInSolutionExplorer": false
 }
